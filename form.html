@@ -40,33 +40,31 @@
             </div>
 
             <div class="campo">
-                <label><strong>Escolha um modelo de trabalho ?</strong></label>
+                <label><strong> Escolha o melhor modelo de trabalho para você </strong></label>
                 <label>
-                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                    <input type="radio" name="hibrido" value="Hibrído" checked>Hibrído
+                <label>
+                    <input type="radio" name="presencial" value="Presencial">Presencial
                 </label>
                 <label>
-                    <input type="radio" name="devweb" value="backend">Back-end
-                </label>
-                <label>
-                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                    <input type="radio" name="turno_noite" value="Remoto">Remoto
                 </label>
             </div>
 
-            <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
             <div class="campo">
-                <label for="senioridade"><strong>Senioridade</strong></label>
-                <select id="senioridade" required>
-                  <option selected disabled value="">Selecione quais </option>
-                  <option>Júnior</option>
-                  <option>Pleno</option>
-                  <option>Sênior</option>
+                <label for="turnos"><strong>Turnos</strong></label>
+                <select id="turnos" required>
+                  <option selected disabled value="">Selecione seu turno de preferência </option>
+                  <option>Manhã</option>
+                  <option>Tarde</option>
+                  <option>Noite</option>
                 </select>
             </div>
 
             <fieldset class="grupo">
-                <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+
                 <div id="check">
-                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                    <label><strong>Selecione as suas tecnologias de domínio:</strong></label><br><br>
                     <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
                     <label for="tecnologia1"> HTML</label>
                     <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
@@ -84,14 +82,12 @@
                 </div>
             </fieldset>
 
-            <!-- Caixa de texto -->
             <div class="campo">
                 <br>
-                <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+                <label for="experiencia"><strong>Conte um pouco mais sobre você: </strong></label>
                 <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
             </div>
 
-            <!-- Botão para enviar o formulário -->
             <button class="botao" type="submit" onsubmit="">Concluído</button>            
 
         </form>
